@@ -92,6 +92,9 @@ main p {
     padding:1% 2%;
     font-size:1em;
 }
+main li {
+  color:black;
+}
 
 main a {
  color:black;
@@ -224,17 +227,66 @@ figure {
   grid-area:B;
   margin:1%;
 }
+.B2 {
+  grid-area:B2;
+  margin:1%;
+}
+.B3 {
+  grid-area:B3;
+  margin:1%;
+}
+.B3Pic {
+  grid-area:B3Pic;
+  padding:5px;
+    height:20vmax;
+}
 
 .C {
   grid-area:C;
   margin:1%;
 }
 
-.D {
-  grid-area:D;
+.C2 {
+  grid-area:C2;
   margin:1%;
 }
+.C3 {
+  grid-area:C3;
+  margin:1%;
+  padding:5px;
+}
+.C3Pic{
+  grid-area:C3Pic;
+  padding:5px;
+    height:20vmax;
+}
+.D {
+  grid-area:D;
+  
+}
 
+.D2 {
+  grid-area:D2;
+  margin:1%;
+}
+.D3 {
+  grid-area:D3;
+  margin:1%;
+}
+.D3Pic {
+  grid-area:D3Pic;
+  height:20vmax;
+  padding:auto auto auto 20px;
+}
+
+.E2 {
+  grid-area:E2;
+  margin:1%;
+}
+.E3 {
+  grid-area:E3;
+  margin:1%;
+}
 figcaption {
   padding:5px;
   color:#0000b0;
@@ -263,6 +315,10 @@ max-width:20em;
 }
 section {
   grid-area:section;
+}
+
+.PicE {
+  
 }
 
 .container1 { /*for later*/
@@ -403,8 +459,10 @@ section {
   display:grid;
   grid-template-columns:100%;
   grid-template-areas:
-  "div1"
-  "div2";
+  "B2"
+  "C2"
+  "D2"
+  "E2";
 }
 
 /* Below will change from hamburger menu to side navigation*/
@@ -475,6 +533,19 @@ section {
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "div1 div2";
+  "B2 B2 B2"
+  "C2 E2 D2";
+  
+}
+.nestedgrid3{
+  display:grid;
+  justify-content:end;
+  grid-template-columns:2fr 1fr 1fr;
+  grid-template-areas:
+  "A A A"
+  "B3Pic B3 B3"
+  "C3Pic C3 C3"
+  "D3Pic D3 D3"
+  "E3 E3 E3"
 }
 }
